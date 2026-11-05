@@ -1,6 +1,6 @@
 # Aura Learn | Analyse, Anticipe, Apprends
 
-**Aura Learn** est une plateforme web interactive d'apprentissage et d'évaluation conçue dans le cadre d'un Projet de Fin d'Études (PFE). Elle permet de digitaliser et de dynamiser le suivi pédagogique à travers deux espaces distincts : un espace enseignant (création de contenus) et un espace étudiant (révision et auto-évaluation).
+**Aura Learn** est une plateforme web interactive d'apprentissage et d'évaluation conçue dans le cadre d'un Projet d'Études (semestre 4). Elle permet de digitaliser et de dynamiser le suivi pédagogique à travers deux espaces distincts : un espace enseignant (création de contenus) et un espace étudiant (révision et auto-évaluation).
 
 ## Fonctionnalités Principales
 
