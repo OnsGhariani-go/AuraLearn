@@ -17,10 +17,10 @@
 
 ## Architecture Technique
 
-* **Front-end :** HTML5, CSS3, JavaScript (Vanilla)
+* **Front-end :** HTML, CSS, JavaScript 
 * **Back-end :** PHP Pur
 * **Base de données :** MySQL (gestion via phpMyAdmin)
-* **Serveur local recommandé :** XAMPP / WampServer
+* **Serveur local recommandé :** LocalHost
   
 ## Structure du Projet
 
