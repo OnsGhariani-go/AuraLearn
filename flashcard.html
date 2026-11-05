@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Aura Learn | Flashcards</title>
+    <link rel="stylesheet" href="fc.css">
+</head>
+<body>
+    <form action="ajoutfc.php" method="post">
+<div class="editor-container">
+    <header class="editor-header">
+        <a href="page1.html" class="retour">← Retour</a>
+        <h1>Chapitre 1 : </h1>
+        <p class="tagline">Édite. Organise. Mémorise.</p>
+    </header>
+
+
+    <div class="flashcards-list"id="flashcard-container" >
+        <div class="flashcard-row">
+            <div class="split-card">
+                <div class="side question">
+                    <label>Question</label>
+                    <textarea placeholder="Question?" name="question"></textarea>
+                </div>
+
+
+                <div class="side answer">
+                    <label>Réponse</label>
+                    <textarea placeholder="Reponse"name="reponse"></textarea>
+                </div>
+
+            </div>
+            <div class="buttons">
+                <button class="btn-icon done"  name="valider" >✅</button>
+                <button class="btn-icon delete" name="supprimer" onclick="removeRow(this)">❌</button>
+            </div>
+        </div>
+    </div>
+
+
+<div class="buttons">
+        <button class="btn-add" id="aj" > ＋ Ajouter une nouvelle Flashcard</button>
+    </div>
+
+    <script>
+      document.getElementById('aj').addEventListener('click', function() {
+            const container = document.getElementById('flashcard-container');
+            const newRow = document.createElement('div');
+            newRow.className = 'flashcard-row';
+            
+            newRow.innerHTML = `
+            <div class="split-card">
+                <div class="side question">
+                    <label>Question</label>
+                    <textarea placeholder="Question?" name="question"></textarea>
+                </div>
+
+
+                <div class="side answer">
+                    <label>Réponse</label>
+                    <textarea placeholder="Reponse"name="reponse"></textarea>
+                </div>
+
+            </div>
+            <div class="buttons">
+                <button class="btn-icon done"  name="valider" >✅</button>
+                <button class="btn-icon delete" name="supprimer" onclick="removeRow(this)">❌</button>
+            </div>
+   
+    
+            </form>
+        `;
+        container.appendChild(newRow);
+        });
+        function removeRow(btn) {
+        const row = btn.closest('.flashcard-row');
+            row.style.transition = "0.3s ease";
+            row.style.opacity = '0';
+            row.style.transform = 'translateX(20px)';
+            setTimeout(() => row.remove(), 300);
+        }
+
+       
+    </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Aura Learn | Dashboard Étudiant</title>
+    <link rel="stylesheet" href="EspaceETUD.css">
+</head>
+<body>
+
+<div class="app-container">
+    <header class="main-header">
+        <div class="logo">Bienvenue sur Aura Learn <br> <h6>Analyse  Anticipe  Apprends</h6> 
+         </div>
+        <div class="profile-info">
+            <img src="AuraLearn.png" alt="Avatar">
+        </div>
+    </header>
+
+ <div class="action-buttons">
+        <a href="LoginETU.html" class="btn-action"> Deconnecter</a>
+            </div>
+            <br>
+
+
+    <div class="welcome-msg">
+        <h1>Mon Espace Étudiant</h1>
+        <p>
+            <b><h4>Gère tes cours, révise tes flashcards et consulte tes résultats</h4></b><br>
+        Flash. Révise. Retiens</p>
+    </div>
+
+    <div class="dashboard-grid">
+        
+        <section class="rubrique-card quiz">
+            <div class="card-header">
+                <span class="icon"></span>
+                <h2>Mes Quiz</h2>
+            </div>
+            <ul class="item-list">
+                <li>
+                    <div class="item-txt">
+                        <strong>Quiz #3 :  Chapitre 2</strong>
+                        <span>Terminé • Score: y</span>
+                    </div>
+                    <a href="pagesupport.html" class="btn-action">Demarrer</a>
+                    <a href="pagerapport.html" class="btn-action">Support</a>
+
+                </li>
+                <li>
+                    <div class="item-txt">
+                        <strong>Quiz #1 :  Chapitre 1</strong>
+                        <span>Terminé • Score: x </span>
+                    </div>
+                    <a href="pagesupport.html" class="btn-action">Demarrer</a>
+                    <a href="pagerapport.html" class="btn-action">Support</a>
+                </li>
+            </ul>
+        </section>
+
+               <section class="rubrique-card flashcards">
+            <div class="card-header">
+                <span class="icon"></span>
+                <h2>Flashcards</h2>
+            </div>
+            <ul class="item-list">
+                <li>
+                    <div class="item-txt">
+                        <strong>Flash-Info Chapitre 1</strong>
+                    </div>
+                    <a href="flashcard.html" class="btn-play">Flash</a>
+                </li>
+                <li>
+                    <div class="item-txt">
+                        <strong>Flash-Info Chapitre 2</strong>
+                    </div>
+                    <a href="flashcard.html" class="btn-play">Flash</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="rubrique-card cours">
+            <div class="card-header">
+                <span class="icon"></span>
+                <h2>Mes Cours</h2>
+            </div>
+            <div class="folders-area">
+                <div class="folder" onclick="location.href='https://www.youtube.com/watch?v=VqKZ0tRwUIc&t=389s'">
+                    <div class="folder-img">📂</div>
+                    <p>Java</p>
+                </div>
+                <div class="folder" onclick="location.href='file:///C:/Users/onsgh/OneDrive/Desktop/Etudes/Reseau/chapitre%2003.pdf'">
+                    <div class="folder-img">📂</div>
+                    <p>Chapitre 1 </p>
+                </div>
+            </div>
+            <button class="btn-view-all">Voir tous les dossiers</button>
+        </section>
+
+
+    </div>
+</div>
+
+</body>
+</html>

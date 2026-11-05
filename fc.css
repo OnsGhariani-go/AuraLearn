@@ -1,0 +1,93 @@
+:root {
+    --bg: #F0F4F8;
+    --primary: #4C51BF;
+    --danger: #FC8181;
+    --success: #68D391;
+    --white: #FFFFFF;
+}
+
+body { font-family: 'Poppins', sans-serif; background: var(--bg); padding: 40px; margin: 0; }
+
+.editor-container { max-width: 1000px; margin: 0 auto; }
+
+.editor-header { text-align: center; margin-bottom: 50px; }
+.editor-header h1 { color:#008; font-size: 5rem; margin-bottom: 6px; }
+.tagline { font-size: 0.8rem; letter-spacing: 5px; color: #000000; text-transform: uppercase; }
+
+.retour { text-decoration: none; color:#008; font-weight: 600; float:left; justify-content:left;}
+
+.flashcard-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.split-card {
+    display: flex;
+    flex: 1;
+    background:#d8b1f6;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #E2E8F0;
+}
+
+.side {
+    flex: 1;
+    padding: 20px;
+}
+
+.question { border-right: 1px solid #e8ccfd; background: #e8ccfd; }
+.answer { background: var(--white); }
+.answer:hover { background: #b272e3; color:rgb(0, 0, 0); }
+
+.side label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    resize: none;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #000000;
+    height: 60px;
+    outline: none;
+}
+
+.buttons { display: flex; flex-direction: column; gap: 10px; }
+.btn-icon {
+    border: none;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+.btn-icon.delete:hover { background: rgb(235, 99, 99); }
+.btn-icon.done:hover { background: rgb(89, 240, 129); }
+
+.add { text-align: center; margin-top: 40px; }
+.btn-add {
+    background:#8a19e0;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(76, 81, 191, 0.3);
+    transition: 0.3s;
+    justify-content: center;
+}
+.btn-add:hover { transform: scale(1.05); background: #1e1aa3; }
