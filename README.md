@@ -15,7 +15,7 @@
   * Enregistrement automatique des résultats (Matière, Chapitre, Date, Score).
   * Accès à un bouton **"Support"** permettant de consulter la correction détaillée et les justifications de l'enseignant après l'évaluation.
 
-## 🛠️ Architecture Technique
+## Architecture Technique
 
 * **Front-end :** HTML5, CSS3, JavaScript (Vanilla)
 * **Back-end :** PHP Pur
